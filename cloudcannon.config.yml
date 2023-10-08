@@ -1,0 +1,33 @@
+paths:
+  uploads: uploads
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  pages:
+    output: true
+    filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+_select_data:
+  aux_links:
+    Template Repository: https://github.com/just-the-docs/just-the-docs-template
+_structures: {}
+_editables: {}
+data_config: {}
+timezone: Etc/UTC
